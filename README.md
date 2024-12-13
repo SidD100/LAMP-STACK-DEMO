@@ -17,7 +17,10 @@ To run this code,
 
 ### NOTE
 Once you get the error: <br />
-Fatal error: Uncaught Error: Call to undefined function mysqli_connect() in /var/www/html/index.php:3 Stack trace: #0 {main} thrown in /var/www/html/index.php on line 3 <br />
+
+>Fatal error: Uncaught Error: Call to undefined function mysqli_connect() in /var/www/html/index.php:3 Stack trace: #0 {main} thrown in /var/www/html/index.php on line 3  
+
+
 Go to Docker's '**www**' server's interactive terminal and run `docker-php-ext-install mysqli && docker-php-ext-enable mysqli && apachectl restart` <br />
 
 ### Credits
