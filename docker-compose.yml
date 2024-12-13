@@ -16,7 +16,7 @@ services:
     ports:
       - 80:80 # HTTP
       - 443:443 # HTTPS
-    # NOTE: in this container's CLI type "docker-php-ext-install mysqli" 
+    # NOTE: in this container's CLI type "docker-php-ext-install mysqli && docker-php-ext-enable mysqli && apachectl restart" 
   phpmyadmin:
     # image: phpmyadmin/phpmyadmin # for x64
     image: arm64v8/phpmyadmin:latest # for Apple ARM silicon chips
